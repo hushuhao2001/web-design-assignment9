@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Book</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="create">
+  <header>
+    <h1>Create a new book</h1>
+  </header>
+
+  <main>
+    <section class="form-card">
+      <form id="create-form" novalidate>
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input id="title" name="title" type="text" required>
+          <span class="error" id="title-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input id="author" name="author" type="text" required>
+          <span class="error" id="author-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="publisher">Publisher</label>
+          <input id="publisher" name="publisher" type="text" required>
+          <span class="error" id="publisher-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="year">Year</label>
+          <input id="year" name="year" type="number" required>
+          <span class="error" id="year-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="pages">Pages</label>
+          <input id="pages" name="pages" type="number" required>
+          <span class="error" id="pages-error"></span>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="button">Submit</button>
+          <a href="index.html" class="button secondary">Cancel</a>
+        </div>
+
+        <div id="create-message" class="message"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Book CRUD App</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
